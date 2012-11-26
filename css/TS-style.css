@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS for Taylor Mobile Experience */
+/* Author: Sevnth Sin */
+/* www.sevnthsin.com */
+
+
+
+/*** BASE STYLES***/											
+
+#svn_taylor_mobile p,
+#svn_taylor_mobile h1,
+#svn_taylor_mobile h2	{	text-shadow: 0px 1px rgba(255,255,255,0.5);
+						}
+#svn_taylor_mobile h1	{	color: #be2226;
+							font-size: 30px;
+							font-weight: bold;
+							margin-top: 10px;
+						}	
+#svn_taylor_mobile h2	{	color: #be2226;
+							font-size: 19px;
+							line-height: 20px;
+							font-weight: bold;
+							text-transform: none;
+							margin-top: 14px;
+							margin-bottom: 4px;
+						}
+#svn_taylor_mobile p	{	color: #444;
+							font-size: 12px;
+							line-height: 14px;
+							font-weight: normal;
+						}
+						
+
+/*** MAIN CONTAINER ***/
+
+#svn_taylor_mobile	{	-webkit-text-size-adjust: none;
+					}
+					
+/*** portrait background ***/
+@media 	only screen and (orientation: portrait) {
+		#svn_taylor_mobile	{	background: url(http://static.targetimg1.com/ss_taylor/mobile/20121019/img/TS-mobile-p-background.jpg) no-repeat top right;
+								background-size: 400px 630px;
+							}
+		#album,
+		#video,
+		#taylor_at_target,
+		#extras,
+		#more		{	margin-left: 25px;	
+					}
+		#more	{	margin-right: 25px;
+				}
+		#logo img	{	margin-left: 4px;	
+					}
+		}
+
+/*** landscape background ***/
+@media 	only screen and (orientation: landscape) {
+		#svn_taylor_mobile	{	background: url(http://static.targetimg1.com/ss_taylor/mobile/20121019/img/TS-mobile-l-background.jpg) no-repeat top right;
+								background-size: 800px 630px;
+							}
+		#logo	{	margin-left: 50px;
+				}
+		#album,
+		#video,
+		#taylor_at_target,
+		#extras,
+		#more	{	margin-left: 75px;
+				}	
+		#more	{	margin-right: 75px;
+				}
+	}
+			
+	
+
+/*** ALBUM ***/
+#svn_taylor_mobile #album img	{	margin-top: 1px;
+									-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+									box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+								}		
+#svn_taylor_mobile #album img:last-of-type	{	margin: 10px 0 5px 0;
+												-webkit-box-shadow: none;
+												box-shadow: none;
+											}
+#svn_taylor_mobile p#buy_button	{	text-shadow: none;
+									margin: 22px 0;
+								}
+#svn_taylor_mobile #buy_button a	{	color: #fff;
+										font-size: 14px;
+										font-weight: bold;
+										text-align: center;
+										background: #e90c0c url(http://static.targetimg1.com/ss_taylor/mobile/20121019/img/TS-mobile-button.gif) no-repeat bottom center;
+										background-size: 150px 20px;
+										padding: 8px 40px;
+										border: 3px solid #fff;
+										-webkit-border-radius: 35px;
+										border-radius: 35px;
+										-webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1),
+															-1px -1px 2px 1px rgba(0,0,0,0.1);
+										box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1),
+													-1px -1px 2px 1px rgba(0,0,0,0.1);
+										position: relative;
+										right: 12px;
+									}
+#svn_taylor_mobile #buy_button a:hover	{	text-decoration: none;
+										}								
+#svn_taylor_mobile #album em 	{	font-style: italic;
+									color: #be2226;
+									font-weight: bold;
+									letter-spacing: -.5px;
+								}
+								
+								
+/*** VIDEOS ***/
+#svn_taylor_mobile #video #hd	{	display: none;
+								}
+#svn_taylor_mobile #video #sd	{	 display: block;
+								}
+#svn_taylor_mobile #video img	{	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+									box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+								}
+
+/*** #TAYLORATTARGET ***/
+
+#svn_taylor_mobile #taylor_at_target img	{	padding-top: 3px;
+												-webkit-border-radius: 6px;
+												border-radius: 6px;
+												-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+												box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+											}
+#svn_taylor_mobile #taylor_at_target h2	{	padding-top:7px;
+											margin: 5px 8px 6px 0px;
+											float: left;
+										}
+#svn_taylor_mobile #taylor_at_target p	{	width: 190px;
+											clear: left;
+										}
+
+/*** DOWNLOADS ***/
+#svn_taylor_mobile #extras #retina	{display: none;}
+#svn_taylor_mobile #extras #standard	{display: block;}
+
+#svn_taylor_mobile #extras img	{	-webkit-box-shadow: none;
+									box-shadow: none;
+								}
+									
+#svn_taylor_mobile #extras a:last-of-type img	{	margin-left: 15px;
+												}
+/*** MORE TAYLOR ***/							
+#svn_taylor_mobile #more	{	display: block;
+								
+							}				
+#svn_taylor_mobile #more a	{	font-size: 20px;
+								font-weight: bold;
+								text-decoration: none;
+								margin: 15px 0px 10px 0px;
+								padding: 22px 15px;
+								background-color: #e2f2ff;
+								-webkit-border-radius: 10px;
+								border-radius: 10px;
+								display: block;
+							}
+											
+/****** MEDIA QUERIES *******/
+
+
+/*** HD video, wallpaper for high-density displays ***/
+@media	only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+		only screen and (-moz-min-device-pixel-ratio: 1.5),
+		only screen and (-o-min-device-pixel-ratio: 3/2),
+		only screen and (min-device-pixel-ratio: 1.5) {
+				#svn_taylor_mobile #video #hd	{	display: block;	}
+				#svn_taylor_mobile #video #sd	{	 display: none;	}
+				#svn_taylor_mobile #extras #retina	{	display: block;	}
+				#svn_taylor_mobile #extras #standard {	display: none;	}
+		}
+		
+
+
+
